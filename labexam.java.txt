@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Operation_in_array {
+     public static int linearSearch(int[] a1, int num){   
+	  
+     for(int i=0;i<a1.length;i++){ 
+    	 
+    		  if(a1[i] == num){    
+    		   return i;    
+    		    }
+    		 
+    		 }
+     
+    		return -1;    
+    	 }    
+    		    public static void main(String a[]){ 
+    		    	 int[] a1= {10,20,30,50,70,90};    
+    		    	Scanner sc= new Scanner(System.in);
+    		    	System.out.println("enter your no:");
+    		    	int num = sc.nextInt();
+    		    	
+    		       
+    		         
+    		        System.out.println (num+ " is found at index: " +linearSearch(a1, num));    
+    		    }    
+    		
+    }
+    
